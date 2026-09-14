@@ -1,0 +1,357 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 720,
+	"windowMinHeight": 600,
+	"width": 720,
+	"height": 600,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onDataChange",
+		"onUnload",
+		"onTimer",
+		"onAfterEdit",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 680,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "TabControl",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						":xliff:Page 1",
+						":xliff:Page 2",
+						":xliff:Page 3"
+					],
+					"action": "GotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"ListBox": {
+					"type": "listbox",
+					"top": 180,
+					"left": 40,
+					"width": 360,
+					"height": 380,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"hideExtraBlankRows": true,
+					"rowHeight": "5em",
+					"table": 1,
+					"highlightSet": "$ListboxSet0",
+					"scrollbarVertical": "automatic",
+					"fill": "#DFF7FF",
+					"alternateFill": "automatic",
+					"method": "ObjectMethods/ListBox.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Column7",
+							"dataSource": "[Person:1]ID:1",
+							"dataSourceTypeHint": "integer",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 40,
+							"stroke": "automatic",
+							"fill": "#DFF7FF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header7",
+								"text": "ID",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer7",
+								"stroke": "automatic",
+								"fill": "#DFF7FF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Column8",
+							"dataSource": "JSON Stringify:C1217([Person:1]OB_Field:2)",
+							"width": 320,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"stroke": "automatic",
+							"fill": "#DFF7FF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "middle",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header8",
+								"text": "OB_Field",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							},
+							"footer": {
+								"name": "Footer8",
+								"stroke": "automatic",
+								"fill": "#DFF7FF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Field": {
+					"type": "input",
+					"top": 180,
+					"left": 420,
+					"width": 260,
+					"height": 380,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Person:1]OB_Field:2",
+					"dataSourceTypeHint": "object",
+					"focusable": false,
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Splitter": {
+					"type": "splitter",
+					"top": 180,
+					"left": 408,
+					"width": 6,
+					"height": 380,
+					"visibility": "hidden",
+					"sizingX": "move",
+					"sizingY": "grow",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioButton2": {
+					"type": "radio",
+					"top": 138,
+					"left": 83,
+					"width": 400,
+					"height": 22,
+					"visibility": "hidden",
+					"text": ":xliff:Matching arguments are in at least one element",
+					"focusable": false,
+					"radioGroup": "Group4",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioButton1": {
+					"type": "radio",
+					"top": 116,
+					"left": 83,
+					"width": 400,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "newVersion",
+					"text": ":xliff:Matching arguments are in the same element (new)",
+					"focusable": false,
+					"radioGroup": "Group4",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable": {
+					"type": "input",
+					"top": 70,
+					"left": 40,
+					"width": 640,
+					"height": 490,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Var1",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 70,
+					"left": 40,
+					"width": 640,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "Var2",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 140,
+					"left": 558,
+					"width": 122,
+					"height": 22,
+					"sizingX": "move",
+					"text": ":xliff:Query",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable3": {
+					"type": "input",
+					"top": 70,
+					"left": 40,
+					"width": 640,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "Var3",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 140,
+					"left": 558,
+					"width": 122,
+					"height": 22,
+					"sizingX": "move",
+					"text": ":xliff:Query",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable4": {
+					"type": "input",
+					"top": 70,
+					"left": 40,
+					"width": 640,
+					"height": 49,
+					"sizingX": "grow",
+					"dataSource": "Var4",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 140,
+					"left": 558,
+					"width": 122,
+					"height": 22,
+					"sizingX": "move",
+					"text": ":xliff:Query",
+					"focusable": false,
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group4": [
+				"RadioButton2",
+				"RadioButton1"
+			]
+		}
+	}
+}

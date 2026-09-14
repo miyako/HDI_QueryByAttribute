@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="en-US">
+    <header>
+      <note/>
+    </header>
+    <body>
+      <group resname="HDI2">
+        <trans-unit resname="Page 1">
+          <source>Page 1</source>
+          <target>Page 1</target>
+        </trans-unit>
+        <trans-unit resname="Page 2">
+          <source>Page 2</source>
+          <target>Page 2</target>
+        </trans-unit>
+        <trans-unit resname="Page 3">
+          <source>Page 3</source>
+          <target>Page 3</target>
+        </trans-unit>
+        <trans-unit resname="Matching arguments are in the same element (new)">
+          <source>Matching arguments are in the same element (new)</source>
+          <target>Matching arguments are in the same element (new)</target>
+        </trans-unit>
+        <trans-unit resname="Matching arguments are in at least one element">
+          <source>Matching arguments are in at least one element</source>
+          <target>Matching arguments are in at least one element</target>
+        </trans-unit>
+        <trans-unit resname="Query">
+          <source>Query</source>
+          <target>Query</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="ja">
+    <header>
+      <note/>
+    </header>
+    <body>
+      <group resname="HDI2">
+        <trans-unit resname="Page 1">
+          <source>Page 1</source>
+          <target>ページ 1</target>
+        </trans-unit>
+        <trans-unit resname="Page 2">
+          <source>Page 2</source>
+          <target>ページ 2</target>
+        </trans-unit>
+        <trans-unit resname="Page 3">
+          <source>Page 3</source>
+          <target>ページ 3</target>
+        </trans-unit>
+        <trans-unit resname="Matching arguments are in the same element (new)">
+          <source>Matching arguments are in the same element (new)</source>
+          <target>すべての条件が同じ要素の中で合致（新）</target>
+        </trans-unit>
+        <trans-unit resname="Matching arguments are in at least one element">
+          <source>Matching arguments are in at least one element</source>
+          <target>それぞれの条件がいずれかの要素で合致</target>
+        </trans-unit>
+        <trans-unit resname="Query">
+          <source>Query</source>
+          <target>クエリ</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

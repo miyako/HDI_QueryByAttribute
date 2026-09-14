@@ -10,8 +10,7 @@ Case of
 		
 		initHDI
 		
-		C_BOOLEAN:C305(newVersion)
-		newVersion:=True:C214
+		Form.newVersion:=True:C214
 		
 	: (Form event code:C388=On Page Change:K2:54)
 		

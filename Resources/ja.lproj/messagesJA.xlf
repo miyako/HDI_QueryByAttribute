@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="ja">
+    <header>
+      <note/>
+    </header>
+    <body>
+      <trans-unit resname="Quit 4D">
+        <source>Quit 4D</source>
+        <target>終了する</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

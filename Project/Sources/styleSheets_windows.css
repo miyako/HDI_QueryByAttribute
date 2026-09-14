@@ -9,3 +9,11 @@
 	font-weight: bold;
 }
 
+.default {
+	height: 22px;
+}
+
+button.default {
+	height: 22px;
+}
+

@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: light) {
+	.hdi-listbox {
+		fill: #DFF7FF;
+	}
+
+	listbox.hdi-listbox {
+		fill: #DFF7FF;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.hdi-listbox {
+		fill: #16323D;
+	}
+
+	listbox.hdi-listbox {
+		fill: #16323D;
+	}
+}

@@ -280,6 +280,20 @@ If you want a custom odd-row background (instead of fully automatic), do it via 
 }
 ```
 
+5. Also define the same rule on the compound `listbox.hdi-list` selector alongside the bare class selector, in both media query blocks. The bare class selector alone does not always match a listbox object reliably at runtime — the same class-matching flakiness documented for button height rules (`.default` vs `button.default`) applies here too. Defining the rule on both selectors is a cheap, safe way to guarantee the fill actually takes effect:
+
+```css
+@media (prefers-color-scheme: light) {
+  .hdi-list { fill: #FDFED3; }
+  listbox.hdi-list { fill: #FDFED3; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .hdi-list { fill: #3A2F1F; }
+  listbox.hdi-list { fill: #3A2F1F; }
+}
+```
+
 ### Meta Source Colours
 
 - Never hardcode light-mode-only colours in meta source methods.

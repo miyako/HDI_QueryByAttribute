@@ -31,6 +31,7 @@
 					"height": 76,
 					"class": "HDI",
 					"fontWeight": "bold",
+					"stroke": "automatic",
 					"text": ":xliff:... query in an array attribute on the same array element?"
 				},
 				"Picture3": {
@@ -42,38 +43,17 @@
 					"pictureFormat": "scaled",
 					"picture": "/RESOURCES/4D.png"
 				},
-				"TxtSorry1": {
-					"type": "text",
-					"top": 207,
-					"left": 20,
-					"width": 320,
-					"height": 81,
-					"visibility": "hidden",
-					"stroke": "#FF4D00",
-					"textAlign": "left",
-					"text": ":xliff:Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality."
-				},
-				"TxtSorry3": {
-					"type": "text",
-					"top": 284,
-					"left": 20,
-					"width": 227,
-					"height": 33,
-					"visibility": "hidden",
-					"stroke": "#FF4D00",
-					"textAlign": "left",
-					"text": ":xliff:The plugin xxx is mandatory"
-				},
 				"BtnDemo": {
 					"type": "button",
 					"top": 280,
 					"left": 250,
 					"width": 90,
-					"height": 20,
+					"class": "default",
 					"action": "accept",
 					"text": ":xliff:Demo",
 					"focusable": false,
 					"defaultButton": true,
+					"method": "ObjectMethods/BtnDemo.4dm",
 					"events": [
 						"onClick"
 					]
@@ -85,18 +65,8 @@
 					"width": 220,
 					"height": 14,
 					"fontTheme": "additional",
+					"stroke": "automatic",
 					"text": ":xliff:(4D v16 and above...)"
-				},
-				"TxtSorry2": {
-					"type": "text",
-					"top": 120,
-					"left": 20,
-					"width": 320,
-					"height": 81,
-					"visibility": "hidden",
-					"textAlign": "center",
-					"fontWeight": "bold",
-					"text": ":xliff:Sorry"
 				},
 				"TxtInfo1": {
 					"type": "text",
@@ -106,6 +76,7 @@
 					"height": 18,
 					"class": "HDI",
 					"fontWeight": "bold",
+					"stroke": "automatic",
 					"text": ":xliff:How Do I..."
 				}
 			}
@@ -113,20 +84,13 @@
 	],
 	"editor": {
 		"defaultView": "View 1",
-		"activeView": "BAD 4D VERSION",
+		"activeView": "View 1",
 		"views": {
 			"View 1": {},
 			"View 2": {
 				"objects": [
 					"TxtInfo2",
 					"TxtInfo1"
-				]
-			},
-			"BAD 4D VERSION": {
-				"objects": [
-					"TxtSorry1",
-					"TxtSorry3",
-					"TxtSorry2"
 				]
 			},
 			"View 4": {},

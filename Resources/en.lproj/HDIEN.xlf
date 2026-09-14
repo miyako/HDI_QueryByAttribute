@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v16" source-language="en-US" target-language="en-US">
+    <header>
+      <note/>
+    </header>
+    <body>
+      <group resname="HDI">
+        <trans-unit resname="Demo">
+          <source>Demo</source>
+          <target>Demo</target>
+        </trans-unit>
+        <trans-unit resname="(4D v16 and above...)">
+          <source>(4D v16R2 and above...)</source>
+          <target>(4D v16R2 and above...)</target>
+        </trans-unit>
+        <trans-unit resname="How Do I...">
+          <source>How Do I...</source>
+          <target>How Do I...</target>
+        </trans-unit>
+        <trans-unit resname="... query in an array attribute on the same array element?">
+          <source>... query in an array attribute on the same array element?</source>
+          <target>... query in an array attribute on the same array element?</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

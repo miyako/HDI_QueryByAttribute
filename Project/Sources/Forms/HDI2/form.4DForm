@@ -69,8 +69,8 @@
 					"table": 1,
 					"highlightSet": "$ListboxSet0",
 					"scrollbarVertical": "automatic",
-					"fill": "#DFF7FF",
-					"alternateFill": "automatic",
+					"class": "hdi-listbox",
+					"alternateFill": "automaticAlternate",
 					"method": "ObjectMethods/ListBox.4dm",
 					"events": [
 						"onClick",
@@ -87,8 +87,7 @@
 							"minWidth": 10,
 							"maxWidth": 40,
 							"stroke": "automatic",
-							"fill": "#DFF7FF",
-							"alternateFill": "automatic",
+							"truncateMode": "none",
 							"textAlign": "automatic",
 							"verticalAlign": "middle",
 							"events": [
@@ -105,7 +104,6 @@
 							"footer": {
 								"name": "Footer7",
 								"stroke": "automatic",
-								"fill": "#DFF7FF",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							}
@@ -118,8 +116,7 @@
 							"maxWidth": 32000,
 							"wordwrap": "normal",
 							"stroke": "automatic",
-							"fill": "#DFF7FF",
-							"alternateFill": "automatic",
+							"truncateMode": "none",
 							"textAlign": "automatic",
 							"verticalAlign": "middle",
 							"events": [
@@ -136,7 +133,6 @@
 							"footer": {
 								"name": "Footer8",
 								"stroke": "automatic",
-								"fill": "#DFF7FF",
 								"textAlign": "automatic",
 								"verticalAlign": "automatic"
 							}
@@ -156,6 +152,7 @@
 					"dataSourceTypeHint": "object",
 					"focusable": false,
 					"enterable": false,
+					"stroke": "automatic",
 					"dragging": "none",
 					"dropping": "custom",
 					"events": [
@@ -196,7 +193,7 @@
 					"width": 400,
 					"height": 20,
 					"visibility": "hidden",
-					"dataSource": "newVersion",
+					"dataSource": "Form.newVersion",
 					"text": ":xliff:Matching arguments are in the same element (new)",
 					"focusable": false,
 					"radioGroup": "Group4",
@@ -258,8 +255,8 @@
 					"top": 140,
 					"left": 558,
 					"width": 122,
-					"height": 22,
 					"sizingX": "move",
+					"class": "default",
 					"text": ":xliff:Query",
 					"focusable": false,
 					"method": "ObjectMethods/Button.4dm",
@@ -296,8 +293,8 @@
 					"top": 140,
 					"left": 558,
 					"width": 122,
-					"height": 22,
 					"sizingX": "move",
+					"class": "default",
 					"text": ":xliff:Query",
 					"focusable": false,
 					"method": "ObjectMethods/Button1.4dm",
@@ -334,8 +331,8 @@
 					"top": 140,
 					"left": 558,
 					"width": 122,
-					"height": 22,
 					"sizingX": "move",
+					"class": "default",
 					"text": ":xliff:Query",
 					"focusable": false,
 					"method": "ObjectMethods/Button2.4dm",

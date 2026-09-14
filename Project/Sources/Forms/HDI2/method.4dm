@@ -10,7 +10,15 @@ Case of
 		
 		initHDI
 		
-		Form.newVersion:=True:C214
+		If (ds:C1482.Person.getCount()=0)
+			
+			$path:=Folder:C1567(fk resources folder:K87:11).file("data.4ie").platformPath
+			var $project : Text
+			IMPORT DATA:C665($path; $project)
+			
+		End if 
+		
+		Form:C1466.newVersion:=True:C214
 		
 	: (Form event code:C388=On Page Change:K2:54)
 		

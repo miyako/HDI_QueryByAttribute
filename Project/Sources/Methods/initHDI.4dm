@@ -10,11 +10,6 @@ End if
 
 $json:=$json.orderBy("SampleSort asc")
 COLLECTION TO ARRAY:C1562($json; TabControl; "Title"; TextTabControl; "Text")
-//ALL RECORDS([SAMPLES])
-//ORDER BY([SAMPLES]; [SAMPLES]SampleSort; >)
-//SELECTION TO ARRAY([SAMPLES]Title; TabControl)
-//SELECTION TO ARRAY([SAMPLES]Text; TextTabControl)
-//UNLOAD RECORD([SAMPLES])
 
 TabControl:=0
 Var1:=TextTabControl{1}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="HDI_QueryByAttribute" uuid="89D3E6F80FA9EA408A0E251A8569EC50" collation_locale="fr">
+<base name="HDI_QueryByAttribute" uuid="89D3E6F80FA9EA408A0E251A8569EC50" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
 	<table name="Person" uuid="FBBDC96593D94B38AB14C39DC216761A" id="1">
 		<field name="ID" uuid="B268C085BD58477B94C0F1F1693D0ECE" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
